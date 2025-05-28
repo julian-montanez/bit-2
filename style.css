@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(68, 68, 68);
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.estudiantes{
+    width: 91%;
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carta{
+    width: 300px;
+    background-color: rgb(69, 122, 168);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.foto{
+    width: 300px;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+hr{
+    width: 100%;
+}
+
+.nombre{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.git{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+}

@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(68, 68, 68);
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+.contenedor{
+    position: relative;
+}
+
+.estudiantes{
+    width: 91%;
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carta{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(44, 102, 153);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    backface-visibility: hidden;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cara-delantera{
+    position: absolute;
+    transition: 1s;
+    transform: perspective(1300px) rotateY(0deg);
+}
+
+
+
+.contenedor:hover .cara-delantera{
+    transform: perspective(1300px) rotateY(180deg);
+} 
+
+.cara-trasera{
+    transition: 1s;
+        transform: perspective(1300px) rotateY(180deg);
+}
+
+.contenedor:hover .cara-trasera{
+    transform: perspective(1300px) rotateY(360deg);
+} 
+
+.foto{
+    width: 300px;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+hr{
+    width: 100%;
+}
+
+.nombre{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.code{
+    font-size: 30px;
+}
+
+.cara-trasera > h3 {
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+.git > button{
+    font-size: 25px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.git-logo{
+    height: 20px;
+    width: 20px;
+}
+
+.info:active .carta{
+    color: blueviolet;
+}
+
+.contenedor-boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.aviso{
+    width: 200px;
+    position: absolute;
+    background-color: brown;
+    text-wrap: wrap;
+    font-size: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 10px;
+    top: 30px;
+}

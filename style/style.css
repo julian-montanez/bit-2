@@ -44,15 +44,13 @@ h1{
     transform: perspective(1300px) rotateY(0deg);
 }
 
-
-
 .contenedor:hover .cara-delantera{
     transform: perspective(1300px) rotateY(180deg);
 } 
 
 .cara-trasera{
     transition: 1s;
-        transform: perspective(1300px) rotateY(180deg);
+    transform: perspective(1300px) rotateY(180deg);
 }
 
 .contenedor:hover .cara-trasera{
@@ -80,10 +78,28 @@ hr{
     font-size: 30px;
 }
 
+.cara-trasera > h2 {
+    margin: 20px 0px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+.cara-trasera > p{
+    margin: 0px;
+    font-size: 20px;
+}
+
 .cara-trasera > h3 {
     margin-top: 20px;
     text-transform: capitalize;
     font-family: sans-serif;
+    margin-bottom: 0;
+}
+
+.cara-trasera > ul > li{
+    font-size: 20px;
 }
 
 .git > button{
@@ -109,14 +125,19 @@ hr{
     position: relative;
 }
 
+.contenedor-boton > a{
+    margin-top: 25px;
+}
+
 .aviso{
     width: 200px;
     position: absolute;
-    background-color: brown;
+    background-color: rgb(203, 203, 0);
+    border: 2px solid red;
+    color: red;
     text-wrap: wrap;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-family: sans-serif;
     border-radius: 10px;
-    top: 30px;
 }

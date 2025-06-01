@@ -18,9 +18,13 @@ h1{
     position: relative;
 }
 
+.contenedor2{
+    position: relative;
+}
+
 .estudiantes{
     width: 91%;
-    border: 4px solid azure;
+    border: 4px solid rgb(14, 134, 134);
     border-radius: 20px;
     margin: auto;
     margin-top: 30px;
@@ -51,7 +55,17 @@ h1{
     transform: perspective(1300px) rotateY(0deg);
 }
 
-.contenedor:hover .cara-delantera{
+.boton-360{
+    width: 70px;
+    height: 30px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 350px;
+    left: 130px;
+    z-index: 1;
+}
+
+.boton-360:hover ~ .cara-delantera{
     transform: perspective(1300px) rotateY(180deg);
 } 
 
@@ -64,7 +78,7 @@ h1{
     margin-right: 20px;
 }
 
-.contenedor:hover .cara-trasera{
+.boton-360:scope ~ .cara-trasera{
     transform: perspective(1300px) rotateY(360deg);
 } 
 

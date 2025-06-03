@@ -33,9 +33,9 @@ fetch('json/file.json')
                     <p class="code">N°${info[i].code}</p>
                 </div>
                 <div class="carta cara-trasera">
-                    <h2>intencidad del curso</h2>
+                    <h2>intensidad del curso</h2>
                     <p>${horas}</p>
-                    <h3>notas de proyectos</h3>
+                    <h3>proyectos</h3>
                     <ul>
                         <li>${info[i].projects[0].name}: <br>${promedio(info[i].projects[0].score)}</li>
                         <li>${info[i].projects[1].name}: <br>${promedio(info[i].projects[1].score)}</li>

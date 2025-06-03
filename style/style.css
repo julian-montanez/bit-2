@@ -20,6 +20,7 @@ h1{
 
 .estudiantes{
     width: 91%;
+    min-width: 400px;
     border: 4px solid azure;
     border-radius: 20px;
     margin: auto;
@@ -32,6 +33,7 @@ h1{
 
 .carta{
     width: 300px;
+    min-width: 300px;
     height: 400px;
     background-color: var(--color-principal);
     margin: 20px;
@@ -87,6 +89,8 @@ hr{
 
 .code{
     font-size: 30px;
+    font-family: sans-serif;
+    color: azure;
 }
 
 .cara-trasera > h2 {
@@ -95,6 +99,7 @@ hr{
     font-size: 20px;
     text-transform: capitalize;
     font-family: sans-serif;
+    color: azure;
 }
 
 .cara-trasera > p{
@@ -107,6 +112,7 @@ hr{
     text-transform: capitalize;
     font-family: sans-serif;
     margin-bottom: 0;
+    color: azure;
 }
 
 .cara-trasera > ul > li{
@@ -176,4 +182,9 @@ hr{
     text-align: center;
     font-family: sans-serif;
     border-radius: 10px;
+}
+
+.N2{
+    color: orange;
+        border: 2px solid orange;
 }

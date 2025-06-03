@@ -23,7 +23,7 @@ fetch('json/file.json')
                 }
             }
             let horas = info[i].intensity
-            let horas1 = horas.replace("hours","")
+            horas = horas.replace("hours","horas")
             carta += 
             `<div class="contenedor">
                 <div class="carta cara-delantera">
@@ -34,14 +34,18 @@ fetch('json/file.json')
                 </div>
                 <div class="carta cara-trasera">
                     <h2>intencidad del curso</h2>
-                    <p>${horas1} horas</p>
+                    <p>${horas}</p>
                     <h3>notas de proyectos</h3>
                     <ul>
                         <li>${info[i].projects[0].name}: <br>${promedio(info[i].projects[0].score)}</li>
-                        <li>${info[i].projects[1].name}: <br>${Math.floor(promedio(info[i].projects[1].score))}</li>
+                        <li>${info[i].projects[1].name}: <br>${promedio(info[i].projects[1].score)}</li>
                     </ul>
                     <div class="contenedor-boton">
-                        ${info[i].usernameGithub == false ? `<div class="aviso"><p>el estudiante no posee GitHub</p></div>` : `<a href="${`https://github.com/${info[i].usernameGithub}`}" class="git" id="git" target="blank"><p>Link de </p><img class="git-logo" src="assets/GitHub-Emblema.png" alt="git"></a>`}
+                        ${info[i].usernameGithub == false ? 
+                            info[i].intensity == "100 hours" ? 
+                                `<div class="aviso N2"><p>el estudiante termino el curso</p></div>`: 
+                                `<div class="aviso"><p>el estudiante no posee GitHub</p></div>` : 
+                            `<a href="${`https://github.com/${info[i].usernameGithub}`}" class="git" id="git" target="blank"><p>Link de </p><img class="git-logo" src="assets/GitHub-Emblema.png" alt="git"></a>`}
                     </div>
                 </div>
             </div>`;
@@ -51,3 +55,4 @@ fetch('json/file.json')
     .catch((err) => {
     console.log('error:', err);
 });
+
